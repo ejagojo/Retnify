@@ -1,4 +1,9 @@
 # Retnify: Retinal Disease Classification Using Deep Learning
+# Group members
+- Idil
+- Ej
+- Wu
+- Gaurav
 
 ## Overview
 
