@@ -62,10 +62,10 @@ The project uses the **OCT2017** dataset, which contains retinal OCT images cate
 
 ### Key Metrics
 
-- **SimpleCNN**: Achieved ~94% accuracy but struggled with class imbalance.
-- **VGG16**: Reached ~92% validation accuracy but showed signs of overfitting.
+- **SimpleCNN**: Achieved ~92.15% accuracy but struggled with class imbalance.
+- **VGG16**: Reached 97.08% validation accuracy but showed signs of overfitting.
 - **ResNet-18**: Balanced performance with ~97% validation accuracy.
-- **ResNet-50 with SE Blocks**: Best performance with ~97.3% validation accuracy and minimal overfitting.
+- **ResNet-50 with SE Blocks**: Best performance with ~97.21% validation accuracy and minimal overfitting.
 
 ### Visualizations
 
@@ -107,16 +107,23 @@ Ensure you have the following installed on your system:
 - scikit-learn
 - Grad-CAM
 
+
 ### Steps to Run the Project
 
 1. Clone the repository to your local machine.
-2. Install the required Python libraries manually using the following commands:
+2. Install the required Python libraries found in the first block in the notebook:
 
-```bash
-pip install torch torchvision pandas matplotlib seaborn tqdm pillow scikit-learn grad-cam
+```python
+# %pip install torch torchvision
+# %pip install pandas
+# %pip install matplotlib
+# %pip install seaborn
+# %pip install pillow
+# %pip install tqdm
+# %pip install scikit-learn
+# %pip install grad-cam
 ```
-
-3. Open the `retnify.ipynb` notebook in Jupyter Notebook or any compatible IDE.
+3. Ensure the OCT2017 dataset has been downloaded and extracted into the expected directory structure referenced in the notebook.
 4. Follow the cells in the notebook to preprocess the dataset, train the models, and evaluate the results.
 
 ## Notes
